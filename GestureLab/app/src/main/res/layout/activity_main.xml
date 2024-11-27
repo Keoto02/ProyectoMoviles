@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar_main_menu_layout"></include>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="55dp"
+        android:paddingBottom="85dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/pizza_menu"
+        tools:ignore="MissingConstraints"
+        android:elevation="4dp"
+        app:itemRippleColor="@color/lightgreen_lab"
+        app:itemIconTint="@color/black"
+        android:background="@color/lightblue_lab" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="yellow">#F5A623</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow_background">#FBE5AF</color>
+    <color name="yellow_card">#F0CE7D</color>
+    <color name="red_color">#FF0000</color>
+    <color name="blue_color">#0B1659</color>
+    <color name="lightblue_color">#0B1659</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="pink_lab">#F20F62</color>
+    <color name="darkblue_lab">#023373</color>
+    <color name="lightblue_lab">#468BA6</color>
+    <color name="lightgreen_lab">#8ED79A</color>
+    <color name="lightyellow_lab">#F2B33D</color>
+    <color name="lightblue_card_lab">#A2CACF</color>
+</resources>

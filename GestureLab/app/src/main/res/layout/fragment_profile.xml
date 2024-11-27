@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvProfileLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Perfil"
+            android:textColor="@color/lightblue_lab"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgUserProfile"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/circle_shape"
+            android:contentDescription="pokemon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_profile_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileLabel" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Digite su nombre de usuario"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            app:layout_constraintTop_toBottomOf="@id/imgUserProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+
+        <EditText
+            android:id="@+id/etBirthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Digite su fecha de cumpleaños"
+            android:inputType="date"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            app:layout_constraintTop_toBottomOf="@id/etUsername"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+
+        <EditText
+            android:id="@+id/etGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Digite su género (Hombre/Mujer)"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            app:layout_constraintTop_toBottomOf="@id/etBirthday"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Digite su correo electrónico"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            app:layout_constraintTop_toBottomOf="@id/etGender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+
+        <!-- Botón: Editar -->
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:backgroundTint="@color/lightblue_lab"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
